@@ -1,16 +1,19 @@
 buildscript {
     repositories {
+    	mavenLocal()
+        mavenCentral()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.0.0'
+        classpath 'com.android.tools.build:gradle:2.3.3'
     }
 }
 
 allprojects {
     repositories {
+    	mavenLocal()
+        mavenCentral()
         jcenter()
-        mavenCentral();
         maven {
             url 'https://oss.sonatype.org/content/repositories/releases'
         }
